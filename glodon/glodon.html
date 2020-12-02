@@ -24,12 +24,12 @@
   var canvas = document.getElementById("canvas");
   var ctx = canvas.getContext('2d');
   var img;
-  var stats = new Stats();
-  stats.setMode(0);
-  stats.domElement.style.position = 'absolute';
-  stats.domElement.style.right = '0px';
-  stats.domElement.style.top = '0px';
-  document.body.appendChild(stats.domElement);
+  // var stats = new Stats();
+  // stats.setMode(0);
+  // stats.domElement.style.position = 'absolute';
+  // stats.domElement.style.right = '0px';
+  // stats.domElement.style.top = '0px';
+  // document.body.appendChild(stats.domElement);
 
   canvas.width = window.innerWidth;
   canvas.height = window.innerHeight;
@@ -169,7 +169,7 @@
 
       tick(tickTime);
 
-      stats.update();
+      //stats.update();
 
       RAF(function() {
         animate(tick)
